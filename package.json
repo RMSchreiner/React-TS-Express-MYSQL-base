@@ -1,0 +1,25 @@
+{
+  "name": "reacttsexpressmysqlbase",
+  "version": "1.0.0",
+  "description": "Base for React TS Express Mysql project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git remote add origin https://github.com/RMSchreiner/React-TS-Express-MYSQL-base.git"
+  },
+  "keywords": [
+    "git",
+    "branch",
+    "-M",
+    "mgit",
+    "push",
+    "-u",
+    "origin",
+    "main"
+  ],
+  "author": "",
+  "license": "ISC"
+}

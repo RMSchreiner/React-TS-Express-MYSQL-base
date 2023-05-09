@@ -1,0 +1,5 @@
+client/node_modules
+node_modules
+ormconfig.json
+database.ts
+.env
