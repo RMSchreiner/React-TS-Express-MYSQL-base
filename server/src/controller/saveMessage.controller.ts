@@ -6,13 +6,16 @@ import { DataEntity } from "../entities/Message";
 export const saveMessage = async (req: Request, res: Response) => {
   try {
     const message = req.body.message;
-    if (!message || !message.email || !message.name) {
+    
+    if (!message.userID || !message.message || !message.responseMessage) {
       return res.status(400).send({ error: "Invalid message object" });
     }
     const repository = AppDataSource.getRepository(DataEntity);
+
     await repository.save({
-      email: message.email,
-      name: message.name,
+      userID: message.userID,
+      message: message.message,
+      responseMessage: message.responseMessage,
     });
     res.status(201).send({ message });
   } catch (error) {
