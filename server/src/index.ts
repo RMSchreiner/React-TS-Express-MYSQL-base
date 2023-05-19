@@ -4,8 +4,10 @@ import express from "express";
 import{routes} from "./routes/routes."
 import "reflect-metadata";
 import { AppDataSource } from "./database";
+const cors = require("cors");
 
 const app = express();
+app.use(cors());
 app.use(express.json());
 
 const PORT =  5000;
